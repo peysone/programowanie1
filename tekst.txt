@@ -1,0 +1,45 @@
+PARADYGMATY:
+Enkapsulacja (hermetyzacja) - [modyfikatory dostępu]  robimy hermetycznie wewnątrz klasy
+Dziedziczenie[używamy polecenia extends] zasada D R Y Dont repeat yourself, polimorfizm
+tworzymy nowe obiekty
+enum to typ wyliczeniowy - ogranicza wartości do zadanej ilości
+Polimorfizm (wielopostaciowość) = może być klas oraz metod
+polimorfizm obiektów:
+Obiekt może przyjąć typ dowolnej klasy po której dziedziczy, ale metoda którą wywołamy zawsze wywoła  się z klasy, którego typu posiadamy referencje
+
+kompozycja - składowe/pola które tworzą obiekt
+dziedziczenie - 
+
+
+stos - przechowujemy zmienne
+sterta - obiekty do których się odwołujemy
+konstruktor - forma do tworzenia obiektu, domyślny nie posiada parametrów
+
+
+Klasy abstrakcyjne = stosujemy po to żeby lepiej zobrazować świat 
+
+
+Klasa może dziedziczyć tylko po jednej klasie(niekoniecznie abstrakcyjnej)
+Klasa może implementować nieskończenie wiele interfejsów
+
+Interfejs nie ma pól(nie ma zmiennych klasy interfejsu)
+Wszystkie pola interfejsu są publiczne statyczne
+
+Klasa abstrakcyjna może posiadać pola z różnymi modyfikatorami dostępu
+
+Interfejs ma metody które są ZAWSZE publiczne i abstrakcyjne
+Klasa abstrakcyjna może mieć metody abstrakcyjne ale również może mieć metody nie abstrakcyjne - takie które posiadają pewną implementacje
+
+*Podobieństwo
+w obu przypadkach - nie może istnieć ani żaden obiekt interfejsu (nie ma konstruktora i nie można go stworzyć) ani nie może istnieć obiekt klasy abstrakcyjnej
+
+**     —> odstępstwem są klasy anonimowe
+***   —> czyli posiadające 
+
+
+POJO - Plain Old Java Object 
+defaultowy (pusty, czyli bez parametrów) konstruktor, pola (przeważnie prywatne) i gettery/settery do wszystkich pól
+
+
+Period = okres dłuższy niż dzień (dni, tygodnie, miesiące, lata
+Duration = czas trwania
