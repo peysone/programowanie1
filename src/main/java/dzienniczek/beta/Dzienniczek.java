@@ -33,5 +33,14 @@ public class Dzienniczek {
         }
         return ocena;
     }
+    public Integer poprawOcene(Przedmiot przedmiot) throws BrakOcenyException {
+        final Integer ocena = this.oceny.get(przedmiot);
+        if (ocena == null){
+            throw new BrakOcenyException(przedmiot);
+        }
+        final Integer poprawionaOcena = ocena +1;
+        this.oceny.put(przedmiot, poprawionaOcena);
+        return poprawionaOcena;
+    }
 
 }

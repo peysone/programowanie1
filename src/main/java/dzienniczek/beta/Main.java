@@ -24,11 +24,22 @@ public class Main {
         dzienniczek.wstawOcene(Przedmiot.WF, 5);
         dzienniczek.wypisz();
         System.out.println("---------------");
+        System.out.println("POBIERANIE");
+        System.out.println();
         try {
             System.out.println("udało się pobrać ocenę z historii: "
             + dzienniczek.odczytajOcene(Przedmiot.HISTORIA));
             System.out.println("Udało się pobrać ocenę z WF: "
             + dzienniczek.odczytajOcene(Przedmiot.PLASTYKA));
+        } catch (BrakOcenyException e) {
+            System.out.println(e.getMessage());
+        }
+        System.out.println("---------------");
+        System.out.println("POPRAWIANIE");
+        System.out.println();
+        try {
+            System.out.println("udało się poprawić ocenę z matematyki: "
+                    + dzienniczek.poprawOcene(Przedmiot.MATEMATYKA));
         } catch (BrakOcenyException e) {
             System.out.println(e.getMessage());
         }
